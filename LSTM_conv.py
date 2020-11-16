@@ -24,7 +24,7 @@ plot_graph(time, series)
 plt.show()
 
 #Training and validation partition
-split = 400
+split = 450
 time_train = time[:split]
 time_valid = time[split:]
 series_train = series[:split]
@@ -32,8 +32,8 @@ series_valid = series[split:]
 
 
 #setting values
-window_size = 15
-batch_size = 20
+window_size = 25
+batch_size = 50
 shuffle_buffer_size = 75
 
 #error
