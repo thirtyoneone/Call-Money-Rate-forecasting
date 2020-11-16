@@ -16,6 +16,7 @@ def plot_graph(time, series):
 #using header = none because the excel file only has data
 series = np.array(pd.read_excel("D:\\Dev\\4-1\\Project - Monetary Policy\\Dataset\\rates.xlsx", header = None))
 series = np.reshape(series, (series.shape[0],))
+series = np.flip(series)
 #we have 566 entries
 time = np.arange(566)
  
