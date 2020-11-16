@@ -32,9 +32,9 @@ series_valid = series[split:]
 
 
 #setting values
-window_size = 25
-batch_size = 50
-shuffle_buffer_size = 75
+window_size = 5
+batch_size = 10
+shuffle_buffer_size = 20
 ep = 100 #epochs
 
 #error
