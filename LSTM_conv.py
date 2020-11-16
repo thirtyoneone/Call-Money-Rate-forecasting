@@ -35,6 +35,7 @@ series_valid = series[split:]
 window_size = 25
 batch_size = 50
 shuffle_buffer_size = 75
+ep = 100 #epochs
 
 #error
 def error(valid,forecast):
@@ -64,7 +65,7 @@ model = tf.keras.models.Sequential([
 ])
 
 model.compile(loss="mse", optimizer=tf.keras.optimizers.SGD(lr=1e-6, momentum=0.9))
-model.fit(dataset,epochs=100,verbose=0)
+model.fit(dataset,epochs=ep,verbose=0)
 
 #forecasting
 forecast = []
