@@ -1,9 +1,6 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-import tensorflow as tf
-from tensorflow import keras
-from statsmodels.tsa.stattools import adfuller
 
 #creating a function to plot the graph for given series and time period
 def plot_graph(time, series):
